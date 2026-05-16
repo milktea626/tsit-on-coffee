@@ -1,0 +1,14 @@
+# Robots.txt — Tsit On Coffee 捷安咖啡
+# https://www.tsiton.com.hk
+
+User-agent: *
+Allow: /
+
+# Block any private or internal paths (add as needed)
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.tsiton.com.hk/sitemap.xml
+
+# Crawl delay (optional, courtesy for search engines)
+Crawl-delay: 2

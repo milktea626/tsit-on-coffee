@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(open -a \"Microsoft Edge\" http://localhost:8080)",
+      "Bash(file \"/Users/I812402/Library/CloudStorage/OneDrive-SAPSE/Documents/MY/TsitOn/052023/website/images/\"*)",
+      "Bash(cp \"/Users/I812402/Library/CloudStorage/OneDrive-SAPSE/Documents/MY/TsitOn/052023/website/images/toclogo.jpg\" images/logo/)",
+      "Bash(cp \"/Users/I812402/Library/CloudStorage/OneDrive-SAPSE/Documents/MY/TsitOn/052023/website/images/toclogo_bg.jpg\" images/logo/)",
+      "Bash(cp \"/Users/I812402/Library/CloudStorage/OneDrive-SAPSE/Documents/MY/TsitOn/052023/website/images/beans.jpg\" images/products/)",
+      "Bash(cp \"/Users/I812402/Library/CloudStorage/OneDrive-SAPSE/Documents/MY/TsitOn/052023/website/images/milkteancup.jpg\" images/products/)",
+      "Bash(cp \"/Users/I812402/Library/CloudStorage/OneDrive-SAPSE/Documents/MY/TsitOn/052023/website/images/various_teas_185181.jpg\" images/products/various_teas.jpg)",
+      "Bash(cp \"/Users/I812402/Library/CloudStorage/OneDrive-SAPSE/Documents/MY/TsitOn/052023/imagesPool/kwon-junho-r0Y7IHdVsw4-unsplash.jpg\" images/hero/coffee-hero-1.jpg)",
+      "Bash(cp \"/Users/I812402/Library/CloudStorage/OneDrive-SAPSE/Documents/MY/TsitOn/052023/imagesPool/redd-f-DZCmAU-1YyM-unsplash.jpg\" images/hero/coffee-hero-2.jpg)",
+      "Bash(git *)",
+      "Bash(gh auth *)"
+    ]
+  }
+}
