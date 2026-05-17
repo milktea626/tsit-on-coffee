@@ -56,6 +56,11 @@ function applyLang(lang) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
+  // Update select option text based on language
+  document.querySelectorAll('select option[data-text-zh][data-text-en]').forEach(opt => {
+    opt.textContent = lang === 'zh' ? opt.dataset.textZh : opt.dataset.textEn;
+  });
+
 }
 
 function setLang(lang) {
