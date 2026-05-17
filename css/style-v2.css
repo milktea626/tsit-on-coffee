@@ -357,4 +357,50 @@ body:has(.page-hero-compact) .section {
   .hero-stats-simple strong {
     font-size: 1.5rem;
   }
+
+  /* MOBILE ENHANCEMENT: Larger hamburger touch target */
+  .nav-hamburger {
+    padding: 12px;
+  }
+
+  /* MOBILE ENHANCEMENT: Increase hero top padding to prevent text cutoff */
+  .hero-compact {
+    padding-top: 80px;
+  }
+}
+
+/* MOBILE ENHANCEMENT: Single column form layout for small screens */
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ensure small buttons meet 44px minimum on mobile */
+  .btn-sm {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Increase hero top padding further on very small screens */
+  .hero-compact {
+    padding-top: 85px;
+  }
+
+  .page-hero-compact {
+    padding-top: 40px;
+  }
+}
+
+/* MOBILE ENHANCEMENT: Full-width buttons in forms on small screens */
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Exception: Keep inline buttons (lang-toggle) auto-width */
+  .lang-toggle .btn,
+  .nav-actions .btn {
+    width: auto;
+  }
 }
