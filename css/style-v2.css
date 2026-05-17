@@ -1,5 +1,17 @@
 /* V2-SIMPLE CSS FIXES */
 
+/* Reduce spacing after hero */
+.hero-compact + .section {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+/* Reduce spacing for Why Choose Us section */
+.section-latte {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 /* Compact Section Header */
 .section-header-compact {
   text-align: center;
@@ -198,12 +210,12 @@
 
 /* Hero Compact - Much shorter */
 .hero-compact {
-  min-height: 320px;
+  min-height: 280px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-size: cover;
-  background-position: center;
-  padding: 60px 24px;
+  background-position: center 40%;
+  padding: 70px 24px 30px;
 }
 
 .hero-content-compact {
@@ -230,11 +242,11 @@
   display: inline-flex;
   gap: 24px;
   color: var(--white);
-  margin-bottom: 24px;
   padding: 12px 24px;
   background: rgba(0,0,0,0.2);
   border-radius: 24px;
   font-size: 0.9rem;
+  margin-bottom: 0;
 }
 
 .hero-stats-inline strong {
@@ -245,8 +257,8 @@
 
 @media (max-width: 640px) {
   .hero-compact {
-    min-height: 280px;
-    padding: 40px 20px;
+    min-height: 240px;
+    padding: 60px 20px 25px;
   }
 
   .hero-stats-inline {
