@@ -9,15 +9,15 @@
         data-desc-en="Become a Tsit On Coffee wholesale partner — preferential pricing, priority delivery and professional support. Ideal for cha chaan teng, hotels, restaurants and F&B groups.">
   <meta name="keywords" content="咖啡批發商香港,茶餐廳咖啡供應商,coffee wholesale supplier Hong Kong,wholesale coffee partner HK,cha chaan teng supplier">
   <meta property="og:title" content="批發合作 | 捷安咖啡">
-  <meta property="og:url" content="https://www.tsiton.com.hk/wholesale.html">
-  <link rel="canonical" href="https://www.tsiton.com.hk/wholesale.html">
+  <meta property="og:url" content="https://www.tsitoncoffee.com/wholesale.html">
+  <link rel="canonical" href="https://www.tsitoncoffee.com/wholesale.html">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+HK:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Wholesale Partnership - Tsit On Coffee","description":"Wholesale coffee and tea supplier for Hong Kong restaurants. Apply to become a wholesale partner.","url":"https://www.tsiton.com.hk/wholesale.html"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Wholesale Partnership - Tsit On Coffee","description":"Wholesale coffee and tea supplier for Hong Kong restaurants. Apply to become a wholesale partner.","url":"https://www.tsitoncoffee.com/wholesale.html"}</script>
 </head>
 <body>
 <header class="site-header">
@@ -161,8 +161,16 @@
         <span class="divider"></span>
         <p style="margin-top:16px;"><span data-lang="zh">填妥以下表格，我們的銷售團隊將在兩個工作天內聯絡您，介紹批發條款及安排首次訂購。</span><span data-lang="en">Complete the form below. Our sales team will contact you within 2 business days to discuss wholesale terms and arrange your first order.</span></p>
       </div>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-formspree class="animate-on-scroll">
-        <input type="hidden" name="form_type" value="wholesale_application">
+      <form action="https://api.web3forms.com/submit" method="POST" data-web3form class="animate-on-scroll">
+        <!-- Web3Forms access key -->
+        <input type="hidden" name="access_key" value="12847040-78af-40b4-b9c8-f8b0754b81f5">
+        <input type="hidden" name="subject" value="[捷安咖啡] 批發申請 / Wholesale Application">
+        <input type="hidden" name="from_name" value="Tsit On Coffee Website">
+        <!-- Honeypot: hidden decoy field — bots fill it, humans won't see it -->
+        <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+          <label for="w-website">Website (leave blank)</label>
+          <input type="text" id="w-website" name="website" class="hp-field" tabindex="-1" autocomplete="off">
+        </div>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="w-name"><span data-lang="zh">聯絡人姓名 *</span><span data-lang="en">Contact Name *</span></label>
@@ -298,7 +306,7 @@
         <li><a href="about.html"><span data-lang="zh">關於我們</span><span data-lang="en">About Us</span></a></li>
         <li><a href="contact.html"><span data-lang="zh">聯絡我們</span><span data-lang="en">Contact</span></a></li>
       </ul>
-      <p style="font-size:.8rem;margin-top:16px;color:rgba(255,255,255,.4);">📞 +852 XXXX XXXX<br>✉️ info@tsiton.com.hk</p>
+      <p style="font-size:.8rem;margin-top:16px;color:rgba(255,255,255,.4);">📞 +852-25491122</p>
     </div>
   </div>
   <div class="footer-bottom">

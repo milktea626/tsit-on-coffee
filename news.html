@@ -9,8 +9,8 @@
         data-desc-en="Tsit On Coffee news and updates — new products, industry insights, coffee knowledge and Hong Kong F&B industry news.">
   <meta name="keywords" content="咖啡批發新聞香港,茶餐廳行業資訊,Hong Kong coffee industry news,cha chaan teng F&B news HK">
   <meta property="og:title" content="最新消息 | 捷安咖啡">
-  <meta property="og:url" content="https://www.tsiton.com.hk/news.html">
-  <link rel="canonical" href="https://www.tsiton.com.hk/news.html">
+  <meta property="og:url" content="https://www.tsitoncoffee.com/news.html">
+  <link rel="canonical" href="https://www.tsitoncoffee.com/news.html">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,10 +163,26 @@
   <div class="container">
     <h2><span data-lang="zh">訂閱我們的最新消息</span><span data-lang="en">Subscribe to Our Newsletter</span></h2>
     <p><span data-lang="zh">獲取最新產品資訊、行業動態及批發優惠，直接發送到您的電子郵箱。</span><span data-lang="en">Get the latest product news, industry updates and wholesale offers delivered directly to your inbox.</span></p>
-    <form style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;max-width:480px;margin:0 auto;" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="hidden" name="form_type" value="newsletter">
-      <input type="email" name="email" class="form-control" style="flex:1;min-width:200px;" placeholder="your@email.com" required>
-      <button type="submit" class="btn btn-primary"><span data-lang="zh">訂閱</span><span data-lang="en">Subscribe</span></button>
+    <form style="max-width:480px;margin:0 auto;" action="https://api.web3forms.com/submit" method="POST" data-web3form>
+      <!-- Web3Forms access key -->
+      <input type="hidden" name="access_key" value="12847040-78af-40b4-b9c8-f8b0754b81f5">
+      <input type="hidden" name="subject" value="[捷安咖啡] 電子報訂閱 / Newsletter Subscription">
+      <input type="hidden" name="from_name" value="Tsit On Coffee Website">
+      <!-- Honeypot -->
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+        <label for="nl-website">Website (leave blank)</label>
+        <input type="text" id="nl-website" name="website" class="hp-field" tabindex="-1" autocomplete="off">
+      </div>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <input type="email" name="email" class="form-control" style="flex:1;min-width:200px;" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary"><span data-lang="zh">訂閱</span><span data-lang="en">Subscribe</span></button>
+      </div>
+      <div class="form-success hidden" style="margin-top:12px;padding:12px;background:rgba(200,134,10,0.1);border-radius:8px;color:var(--amber);font-weight:600;text-align:center;">
+        <span data-lang="zh">✓ 已成功訂閱！</span><span data-lang="en">✓ Subscribed successfully!</span>
+      </div>
+      <div class="form-error hidden" style="margin-top:12px;padding:12px;background:rgba(200,0,0,0.08);border-radius:8px;color:#c00;text-align:center;">
+        <span data-lang="zh">訂閱失敗，請稍後重試。</span><span data-lang="en">Subscription failed. Please try again.</span>
+      </div>
     </form>
   </div>
 </section>
@@ -202,7 +218,7 @@
         <li><a href="about.html"><span data-lang="zh">關於我們</span><span data-lang="en">About Us</span></a></li>
         <li><a href="contact.html"><span data-lang="zh">聯絡我們</span><span data-lang="en">Contact</span></a></li>
       </ul>
-      <p style="font-size:.8rem;margin-top:16px;color:rgba(255,255,255,.4);">📞 +852 XXXX XXXX<br>✉️ info@tsiton.com.hk</p>
+      <p style="font-size:.8rem;margin-top:16px;color:rgba(255,255,255,.4);">📞 +852-25491122</p>
     </div>
   </div>
   <div class="footer-bottom">

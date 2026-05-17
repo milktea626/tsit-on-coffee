@@ -4,17 +4,17 @@
 
   <!-- Home -->
   <url>
-    <loc>https://www.tsiton.com.hk/</loc>
+    <loc>https://www.tsitoncoffee.com/</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tsiton.com.hk/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.tsiton.com.hk/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.tsitoncoffee.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tsitoncoffee.com/?lang=en"/>
   </url>
 
   <!-- About -->
   <url>
-    <loc>https://www.tsiton.com.hk/about.html</loc>
+    <loc>https://www.tsitoncoffee.com/about.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -22,19 +22,19 @@
 
   <!-- Products -->
   <url>
-    <loc>https://www.tsiton.com.hk/products/coffee.html</loc>
+    <loc>https://www.tsitoncoffee.com/products/coffee.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.tsiton.com.hk/products/milk-tea.html</loc>
+    <loc>https://www.tsitoncoffee.com/products/milk-tea.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.tsiton.com.hk/products/dry-goods.html</loc>
+    <loc>https://www.tsitoncoffee.com/products/dry-goods.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -42,25 +42,25 @@
 
   <!-- Services -->
   <url>
-    <loc>https://www.tsiton.com.hk/roastery.html</loc>
+    <loc>https://www.tsitoncoffee.com/roastery.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.tsiton.com.hk/custom-blending.html</loc>
+    <loc>https://www.tsitoncoffee.com/custom-blending.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.tsiton.com.hk/wholesale.html</loc>
+    <loc>https://www.tsitoncoffee.com/wholesale.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.tsiton.com.hk/logistics.html</loc>
+    <loc>https://www.tsitoncoffee.com/logistics.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -68,13 +68,13 @@
 
   <!-- News -->
   <url>
-    <loc>https://www.tsiton.com.hk/news.html</loc>
+    <loc>https://www.tsitoncoffee.com/news.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.tsiton.com.hk/news/how-to-choose-coffee-blend.html</loc>
+    <loc>https://www.tsitoncoffee.com/news/how-to-choose-coffee-blend.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -82,7 +82,7 @@
 
   <!-- Contact -->
   <url>
-    <loc>https://www.tsiton.com.hk/contact.html</loc>
+    <loc>https://www.tsitoncoffee.com/contact.html</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
