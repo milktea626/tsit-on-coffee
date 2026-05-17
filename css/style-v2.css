@@ -29,8 +29,13 @@ body:has(.page-hero-compact) .section {
 
 /* Reduce spacing for Why Choose Us section */
 .section-latte {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Reduce section-header spacing on homepage */
+.section-header {
+  margin-bottom: 28px;
 }
 
 /* Compact Section Header */
@@ -215,9 +220,9 @@ body:has(.page-hero-compact) .section {
   vertical-align: middle;
 }
 
-/* Footer icons need bright color for visibility against dark background */
+/* Footer icons need cream color for visibility against dark background */
 .site-footer .icon-sm {
-  filter: brightness(0) saturate(100%) invert(86%) sepia(52%) saturate(524%) hue-rotate(359deg) brightness(104%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(96%) sepia(8%) saturate(275%) hue-rotate(328deg) brightness(103%) contrast(97%);
 }
 
 .icon-med {
@@ -315,7 +320,7 @@ body:has(.page-hero-compact) .section {
 
 .footer-brand p {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.65);
   margin-top: 12px;
 }
 

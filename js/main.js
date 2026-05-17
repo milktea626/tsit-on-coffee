@@ -155,41 +155,50 @@ function initBackToTop() {
   });
 }
 
-/* ─── 5. FORMSPREE AJAX ──────────────────────────────────────────── */
+/* ─── 5. WEB3FORMS AJAX + HONEYPOT ──────────────────────────────── */
 
 function initForms() {
-  document.querySelectorAll('form[data-formspree]').forEach(form => {
+  document.querySelectorAll('form[data-web3form]').forEach(form => {
     form.addEventListener('submit', async e => {
       e.preventDefault();
+
+      /* ── Honeypot check: bots fill the hidden decoy field; humans leave it blank ── */
+      const honeypot = form.querySelector('.hp-field');
+      if (honeypot && honeypot.value.trim() !== '') {
+        /* Bot detected — silently pretend success, do not submit */
+        const fakeSuccess = form.querySelector('.form-success');
+        if (fakeSuccess) fakeSuccess.classList.remove('hidden');
+        form.reset();
+        return;
+      }
+
       const submitBtn = form.querySelector('[type="submit"]');
       const successEl = form.querySelector('.form-success');
-      const errorEl = form.querySelector('.form-error');
+      const errorEl   = form.querySelector('.form-error');
 
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = '…';
-      }
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '…'; }
       if (successEl) successEl.classList.add('hidden');
-      if (errorEl) errorEl.classList.add('hidden');
+      if (errorEl)   errorEl.classList.add('hidden');
 
       try {
-        const resp = await fetch(form.action, {
+        const data = new FormData(form);
+        const resp = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          body: new FormData(form),
+          body: data,
           headers: { Accept: 'application/json' }
         });
-        if (resp.ok) {
+        const json = await resp.json();
+        if (json.success) {
           form.reset();
           if (successEl) successEl.classList.remove('hidden');
         } else {
-          throw new Error('Server error');
+          throw new Error(json.message || 'Server error');
         }
       } catch {
         if (errorEl) errorEl.classList.remove('hidden');
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
-          const lang = document.documentElement.classList.contains('lang-en') ? 'en' : 'zh';
           submitBtn.innerHTML =
             '<span data-lang="zh">發送查詢</span><span data-lang="en">Send Message</span>';
         }

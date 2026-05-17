@@ -10,7 +10,7 @@
   <meta name="keywords" content="咖啡批發,批發合作,餐廳供應商,coffee wholesale,wholesale partnership,restaurant supplier Hong Kong">
   <meta property="og:title" content="批發合作 | 捷安咖啡">
   <meta property="og:url" content="https://www.tsiton.com.hk/wholesale.html">
-  <link rel="canonical" href="https://www.tsiton.com.hk/wholesale.html">
+  <link rel="canonical" href="https://www.tsiton.com.hk/wholesale-v2.html">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
     </a>
     <ul class="nav-menu" role="list">
       <li><a href="index-v2.html" class="nav-link"><span data-lang="zh">首頁</span><span data-lang="en">Home</span></a></li>
-      <li><a href="products.html" class="nav-link"><span data-lang="zh">產品</span><span data-lang="en">Products</span></a></li>
+      <li><a href="products-v2.html" class="nav-link"><span data-lang="zh">產品</span><span data-lang="en">Products</span></a></li>
       <li><a href="about-v2.html" class="nav-link"><span data-lang="zh">關於</span><span data-lang="en">About</span></a></li>
       <li><a href="services-v2.html" class="nav-link"><span data-lang="zh">服務</span><span data-lang="en">Services</span></a></li>
       <li><a href="contact-v2.html" class="nav-link"><span data-lang="zh">聯絡</span><span data-lang="en">Contact</span></a></li>
@@ -53,7 +53,7 @@
   </nav>
   <div class="nav-mobile">
     <a href="index-v2.html"><span data-lang="zh">首頁</span><span data-lang="en">Home</span></a>
-    <a href="products.html"><span data-lang="zh">產品</span><span data-lang="en">Products</span></a>
+    <a href="products-v2.html"><span data-lang="zh">產品</span><span data-lang="en">Products</span></a>
     <a href="about-v2.html"><span data-lang="zh">關於我們</span><span data-lang="en">About Us</span></a>
     <a href="services-v2.html"><span data-lang="zh">服務</span><span data-lang="en">Services</span></a>
     <a href="wholesale-v2.html"><span data-lang="zh">批發合作</span><span data-lang="en">Wholesale</span></a>
@@ -176,8 +176,16 @@
       <p style="max-width:600px;margin:0 auto;"><span data-lang="zh">填寫以下表格，我們的業務團隊將在兩個工作天內與您聯絡，提供詳細報價及合作方案。</span><span data-lang="en">Complete the form below and our business team will contact you within 2 business days with detailed quotation and partnership proposal.</span></p>
     </div>
 
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-formspree class="animate-on-scroll">
-      <input type="hidden" name="form_type" value="wholesale_enquiry">
+    <form action="https://api.web3forms.com/submit" method="POST" data-web3form class="animate-on-scroll">
+      <!-- Web3Forms access key -->
+      <input type="hidden" name="access_key" value="12847040-78af-40b4-b9c8-f8b0754b81f5">
+      <input type="hidden" name="subject" value="[捷安咖啡] 批發申請 / Wholesale Application">
+
+      <!-- Honeypot: hidden decoy field — bots fill it, humans won't see it -->
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+        <label for="w-website">Website (leave blank)</label>
+        <input type="text" id="w-website" name="website" class="hp-field" tabindex="-1" autocomplete="off">
+      </div>
 
       <div class="form-row">
         <div class="form-group">
@@ -214,14 +222,14 @@
           <span data-lang="zh">業務類型 *</span><span data-lang="en">Business Type *</span>
         </label>
         <select id="w-type" name="business_type" class="form-control" required>
-          <option value="" data-text-zh="請選擇" data-text-en="Please select">Please select</option>
-          <option value="cha_chaan_teng" data-text-zh="茶餐廳" data-text-en="Cha Chaan Teng">Cha Chaan Teng</option>
-          <option value="fast_food" data-text-zh="快餐店" data-text-en="Fast Food">Fast Food</option>
-          <option value="restaurant" data-text-zh="餐廳" data-text-en="Restaurant">Restaurant</option>
-          <option value="cafe" data-text-zh="咖啡店" data-text-en="Café">Café</option>
-          <option value="hotel" data-text-zh="酒店" data-text-en="Hotel">Hotel</option>
-          <option value="catering" data-text-zh="宴會服務" data-text-en="Catering">Catering</option>
-          <option value="other" data-text-zh="其他" data-text-en="Other">Other</option>
+          <option value="" data-text-zh="請選擇" data-text-en="Please select">請選擇</option>
+          <option value="cha_chaan_teng" data-text-zh="茶餐廳" data-text-en="Cha Chaan Teng">茶餐廳</option>
+          <option value="fast_food" data-text-zh="快餐店" data-text-en="Fast Food">快餐店</option>
+          <option value="restaurant" data-text-zh="餐廳" data-text-en="Restaurant">餐廳</option>
+          <option value="cafe" data-text-zh="咖啡店" data-text-en="Café">咖啡店</option>
+          <option value="hotel" data-text-zh="酒店" data-text-en="Hotel">酒店</option>
+          <option value="catering" data-text-zh="宴會服務" data-text-en="Catering">宴會服務</option>
+          <option value="other" data-text-zh="其他" data-text-en="Other">其他</option>
         </select>
       </div>
 
@@ -230,10 +238,10 @@
           <span data-lang="zh">預計每月訂單量</span><span data-lang="en">Expected Monthly Order</span>
         </label>
         <select id="w-volume" name="order_volume" class="form-control">
-          <option value="" data-text-zh="請選擇（選填）" data-text-en="Please select (optional)">Please select (optional)</option>
-          <option value="small" data-text-zh="小量（測試階段）" data-text-en="Small (trial phase)">Small (trial phase)</option>
-          <option value="medium" data-text-zh="中量（10-50kg）" data-text-en="Medium (10-50kg)">Medium (10-50kg)</option>
-          <option value="large" data-text-zh="大量（50kg以上）" data-text-en="Large (50kg+)">Large (50kg+)</option>
+          <option value="" data-text-zh="請選擇（選填）" data-text-en="Please select (optional)">請選擇（選填）</option>
+          <option value="small" data-text-zh="小量（測試階段）" data-text-en="Small (trial phase)">小量（測試階段）</option>
+          <option value="medium" data-text-zh="中量（10-50kg）" data-text-en="Medium (10-50kg)">中量（10-50kg）</option>
+          <option value="large" data-text-zh="大量（50kg以上）" data-text-en="Large (50kg+)">大量（50kg以上）</option>
         </select>
       </div>
 
@@ -242,13 +250,13 @@
           <span data-lang="zh">感興趣的產品 *</span><span data-lang="en">Products of Interest *</span>
         </label>
         <select id="w-interest" name="products_interest" class="form-control" required>
-          <option value="" data-text-zh="請選擇" data-text-en="Please select">Please select</option>
-          <option value="coffee_beans" data-text-zh="咖啡豆及咖啡粉" data-text-en="Coffee Beans & Blends">Coffee Beans & Blends</option>
-          <option value="milk_tea" data-text-zh="港式奶茶茶葉" data-text-en="HK Milk Tea Blends">HK Milk Tea Blends</option>
-          <option value="own_brand_milk" data-text-zh="自家品牌淡奶（佳高、利美）" data-text-en="Own Brand Milk (Ka Kao, Lei Mei)">Own Brand Milk (Ka Kao, Lei Mei)</option>
-          <option value="crown_brand" data-text-zh="皇冠牌西洋菜蜜" data-text-en="Crown Brand Watercress Honey">Crown Brand Watercress Honey</option>
-          <option value="dry_goods" data-text-zh="乾糧及罐頭" data-text-en="Dry & Canned Goods">Dry & Canned Goods</option>
-          <option value="multiple" data-text-zh="多種產品" data-text-en="Multiple Products">Multiple Products</option>
+          <option value="" data-text-zh="請選擇" data-text-en="Please select">請選擇</option>
+          <option value="coffee_beans" data-text-zh="咖啡豆及咖啡粉" data-text-en="Coffee Beans & Blends">咖啡豆及咖啡粉</option>
+          <option value="milk_tea" data-text-zh="港式奶茶茶葉" data-text-en="HK Milk Tea Blends">港式奶茶茶葉</option>
+          <option value="own_brand_milk" data-text-zh="自家品牌淡奶（佳高、利美）" data-text-en="Own Brand Milk (Ka Kao, Lei Mei)">自家品牌淡奶（佳高、利美）</option>
+          <option value="crown_brand" data-text-zh="皇冠牌西洋菜蜜" data-text-en="Crown Brand Watercress Honey">皇冠牌西洋菜蜜</option>
+          <option value="dry_goods" data-text-zh="乾糧及罐頭" data-text-en="Dry & Canned Goods">乾糧及罐頭</option>
+          <option value="multiple" data-text-zh="多種產品" data-text-en="Multiple Products">多種產品</option>
         </select>
       </div>
 
@@ -259,7 +267,7 @@
         <textarea id="w-message" name="message" class="form-control" rows="4"></textarea>
       </div>
 
-      <button type="submit" class="btn btn-primary" style="width:100%;">
+      <button type="submit" class="btn btn-primary">
         <span data-lang="zh">提交批發查詢</span><span data-lang="en">Submit Wholesale Enquiry</span>
       </button>
 
@@ -282,7 +290,7 @@
     <h2><span data-lang="zh">需要更多資訊？</span><span data-lang="en">Need More Information?</span></h2>
     <p><span data-lang="zh">查看我們的產品系列或直接聯絡我們的業務團隊。</span><span data-lang="en">Browse our products or contact our business team directly.</span></p>
     <div class="btn-group">
-      <a href="products.html" class="btn btn-primary btn-lg"><span data-lang="zh">產品系列</span><span data-lang="en">Products</span></a>
+      <a href="products-v2.html" class="btn btn-primary btn-lg"><span data-lang="zh">產品系列</span><span data-lang="en">Products</span></a>
       <a href="contact-v2.html" class="btn btn-outline-white btn-lg"><span data-lang="zh">聯絡我們</span><span data-lang="en">Contact Us</span></a>
     </div>
   </div>
@@ -303,7 +311,7 @@
       <div class="footer-col">
         <h5><span data-lang="zh">快速連結</span><span data-lang="en">Quick Links</span></h5>
         <ul>
-          <li><a href="products.html"><span data-lang="zh">產品系列</span><span data-lang="en">Products</span></a></li>
+          <li><a href="products-v2.html"><span data-lang="zh">產品系列</span><span data-lang="en">Products</span></a></li>
           <li><a href="about-v2.html"><span data-lang="zh">關於我們</span><span data-lang="en">About Us</span></a></li>
           <li><a href="services-v2.html"><span data-lang="zh">我們的服務</span><span data-lang="en">Services</span></a></li>
           <li><a href="wholesale-v2.html"><span data-lang="zh">批發合作</span><span data-lang="en">Wholesale</span></a></li>

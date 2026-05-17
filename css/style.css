@@ -633,7 +633,7 @@ p { margin-bottom: 1rem; }
 /* ---------- CTA Banner ---------- */
 .cta-banner {
   background: linear-gradient(135deg, var(--espresso) 0%, var(--brown) 100%);
-  padding: 80px 24px;
+  padding: 48px 24px;
   text-align: center;
 }
 .cta-banner h2 { color: var(--white); margin-bottom: 16px; }
