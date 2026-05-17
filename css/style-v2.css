@@ -213,7 +213,7 @@ body:has(.page-hero-compact) .section {
   height: 16px;
   display: inline-block;
   vertical-align: middle;
-  stroke: var(--amber);
+  stroke: var(--cream);
 }
 
 .icon-med {
