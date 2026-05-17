@@ -213,12 +213,13 @@ body:has(.page-hero-compact) .section {
   height: 16px;
   display: inline-block;
   vertical-align: middle;
-  stroke: var(--amber);
+  color: var(--amber);
 }
 
-/* Footer icons need to be white for visibility against dark background */
+/* Footer icons need to be bright for visibility against dark background */
 .site-footer .icon-sm {
-  stroke: #FFFFFF;
+  color: var(--amber);
+  filter: brightness(1.5);
 }
 
 .icon-med {
